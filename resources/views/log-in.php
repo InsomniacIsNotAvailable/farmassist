@@ -51,7 +51,7 @@
                 <label><input type="checkbox"> Remember me</label>
                 <a href="#">Forgot Password?</a>
             </div>
-            <div class="signup">New User? <a href="#">Signup</a></div>
+            <div class="signup">New User? <a href="http://localhost/farmassist/resources/views/signup.php">Signup</a></div>
         </div>
     </div>
 

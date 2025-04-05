@@ -40,11 +40,14 @@
                     <fieldset class="form-step active">
                         <legend>Personal Information</legend>
                         <label for="signup_username">Username</label>
-                        <input id="signup_username" name="signup_username" type="text" required>
+                        <input id="signup_username" name="signup_username" type="text" required pattern="^[a-zA-Z0-9_]+$" title="Username must only contain letters, numbers, and underscores.">
+                        
                         <label for="signup_firstname">First Name</label>
-                        <input id="signup_firstname" name="signup_firstname" type="text" required>
+                        <input id="signup_firstname" name="signup_firstname" type="text" required pattern="^[a-zA-Z\s]+$" title="First name must only contain letters and spaces.">
+                        
                         <label for="signup_lastname">Last Name</label>
-                        <input id="signup_lastname" name="signup_lastname" type="text" required>
+                        <input id="signup_lastname" name="signup_lastname" type="text" required pattern="^[a-zA-Z\s]+$" title="Last name must only contain letters and spaces.">
+                        
                         <div class="button-group">
                             <button type="button" class="next-btn">Next</button>
                         </div>
@@ -54,9 +57,11 @@
                     <fieldset class="form-step">
                         <legend>Contact Information</legend>
                         <label for="signup_email">Email</label>
-                        <input id="signup_email" name="signup_email" type="email" required>
+                        <input id="signup_email" name="signup_email" type="email" required title="Please enter a valid email address.">
+                        
                         <label for="signup_contactno">Contact Number</label>
-                        <input id="signup_contactno" name="signup_contactno" type="text" required>
+                        <input id="signup_contactno" name="signup_contactno" type="text" required pattern="^\d{11}$" title="Contact number must be 11 digits.">
+                        
                         <div class="button-group">
                             <button type="button" class="prev-btn">Previous</button>
                             <button type="button" class="next-btn">Next</button>
@@ -67,10 +72,10 @@
                     <fieldset class="form-step">
                         <legend>Set Your Password</legend>
                         <label for="signup_rawpassword">Password</label>
-                        <input id="signup_rawpassword" name="signup_rawpassword" type="password" required>
-
+                        <input id="signup_rawpassword" name="signup_rawpassword" type="password" required minlength="8" title="Password must be at least 8 characters long.">
+                        
                         <label for="signup_confirmpassword">Confirm Password</label>
-                        <input id="signup_confirmpassword" name="signup_confirmpassword" type="password" required>
+                        <input id="signup_confirmpassword" name="signup_confirmpassword" type="password" required title="Passwords must match.">
                         
                         <div class="prev-button-container">
                             <button type="button" class="prev-btn">Previous</button>
@@ -81,7 +86,7 @@
                     </fieldset>
                 </form>
                 <div class="signup">
-                    <p>Have an account? <a href="/login">Log in</a></p>
+                    <p>Have an account? <a href="http://localhost/farmassist/resources/views/log-in.php">Log in</a></p>
                 </div>
             </div>
         </div>
