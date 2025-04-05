@@ -80,7 +80,9 @@
                         </div>
                     </fieldset>
                 </form>
-                <div class="signup">Have an account? <a href="#">Login</a></div>
+                <div class="signup">
+                    <p>Have an account? <a href="/login">Log in</a></p>
+                </div>
             </div>
         </div>
     </main>

@@ -1,0 +1,98 @@
+@import url('global.css');
+
+:root {
+    --clr-d-bg: #006203;
+    --clr-l-bg-dv: #89D749;
+    --clr-d-txt: #2E4005;
+    --clr-l-txt-dv: #FFF;
+    --clr-org-bg: #FF8400;
+    --clr-navbar-txt: #03c803;
+}
+
+.book-container {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.left img {
+    height: 90vh;
+    width: 1000px;
+    object-fit: cover;
+}
+
+.right {
+    flex: 3;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right h2 {
+    font-size: 60px;
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke: 2px var(--clr-navbar-txt);
+    -webkit-text-fill-color: white;
+}
+
+.right p {
+    font-size: 14px;
+    color: grey;
+}
+
+/* Style for input boxes */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #d3d3d3;
+    color: white;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Style for the login button */
+button.login-btn {
+    width: 100%; /* Match the input width */
+    padding: 12px; /* Same padding as the input */
+    background-color: var(--clr-d-bg);
+    color: white;
+    border: none;
+    border-radius: 50px; /* Match the input's border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+button.login-btn:hover {
+    background-color: white;
+    color: var(--clr-d-bg);
+    border: 2px solid var(--clr-navbar-txt);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.options label {
+    font-size: 16px;
+    color: grey;
+}
+
+.options a, .signup a {
+    color: black; /* Default color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.options a:hover, .signup a:hover {
+    color: var(--clr-d-bg); /* Turn green on hover */
+}
+

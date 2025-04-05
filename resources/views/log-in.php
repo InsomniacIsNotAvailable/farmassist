@@ -6,10 +6,8 @@
     <title>Farmassist Login</title>
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Global CSS for shared styles -->
-    <link rel="stylesheet" href="http://localhost/farmassist/resources/css/global.css">
-    <!-- Login-specific CSS -->
-    <link rel="stylesheet" href="http://localhost/farmassist/resources/css/log-in.css">
+    <link rel="stylesheet" href="../../resources/css/global.css">
+    <link rel="stylesheet" href="../../resources/css/login.css">
 </head>
 <body>
     <!-- Header -->
@@ -31,7 +29,7 @@
     <div class="header-spacer"></div>
 
     <!-- Content -->
-    <div class="content">
+    <div class="book-container">
         <div class="left">
             <img src="http://localhost/farmassist/public/image/farmassist-background.jpg" alt="Farmassist Image">
         </div>
