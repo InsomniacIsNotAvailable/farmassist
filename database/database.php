@@ -38,13 +38,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Hash the password
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
+    // Set default user status
+    $userStatus = 'customer'; // Default status is 'customer'
+
     // Save to database (example query)
-    $sql = "INSERT INTO users (username, firstname, lastname, email, contact_number, password) VALUES (?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO users (username, firstname, lastname, email, contact_number, password, user_status) VALUES (?, ?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssssss", $username, $firstname, $lastname, $email, $contactno, $hashedPassword);
+    $stmt->bind_param("sssssss", $username, $firstname, $lastname, $email, $contactno, $hashedPassword, $userStatus);
     $stmt->execute();
 
-    echo "Account created successfully!";
+    echo "<script>console.log('Account created successfully!');</script>";
 }
 
 // Close the database connection
