@@ -1,0 +1,193 @@
+@import url('global.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+:root {
+    --clr-d-bg: #006203;
+    --clr-l-bg-dv: #89D749;
+    --clr-d-txt: #2E4005;
+    --clr-l-txt-dv: #FFF;
+    --clr-org-bg: #FF8400;
+    --clr-navbar-txt: #03c803;
+}
+
+.book-container {
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.book-container .left, 
+.book-container .right {
+    flex: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.book-container .right img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.left {
+    flex: 3;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+}
+
+.left h5, .left p {
+    font-size: 20px;
+    color: var(--clr-d-txt);
+    margin: 30px;
+}
+
+.left h5 {
+    font-size: 24px;
+}
+
+.right {
+    font-size: 60px;
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke: 2px var(--clr-navbar-txt);
+    -webkit-text-fill-color: white;
+}
+
+.aboutus-section {
+    width: 100vw;
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 5px;
+    background-color: #2E4005;
+    margin: 0 10px;
+}
+
+.section-title span {
+    background-color: white;
+    padding: 0 10px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #2E4005;
+    text-transform: uppercase;
+}
+
+.section-had {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+.section-had::before,
+.section-had::after {
+    content: "";
+    flex: 1;
+    height: 5px;
+    background-color: white; /* White lines */
+    margin: 0 10px;
+}
+
+.section-had span {
+    background-color: transparent; /* Matches the section background */
+    padding: 0 10px;
+    font-size: 48px;
+    font-weight: bold;
+    color: white; /* White text */
+    text-transform: uppercase;
+}
+
+.why-farmassist {
+    background-color: #89D749;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    height: 710px;
+}
+
+.why-farmassist .image {
+    height: 500px;
+}
+
+.why-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.why-content .text {
+    text-align: left;
+}
+
+.why-content .text h2 {
+    font-size: 96px;
+    margin: 10px 0;
+}
+
+.why-content .text .highlight {
+    color: red;
+    font-weight: bold;
+}
+
+.why-content .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+    .why-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .why-content .text {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .why-content .image {
+        flex: 1;
+    }
+}
