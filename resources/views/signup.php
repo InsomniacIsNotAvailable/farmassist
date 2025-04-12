@@ -31,7 +31,7 @@
                 <img src="http://localhost/farmassist/public/image/farmassist-background.jpg" alt="Farmassist Image">
             </div>
             <div class="right">
-                <h2>Create Account</h2>
+                <h2>Create</h2>
                 <p>Join us today and enjoy exclusive benefits, faster checkout, and personalized recommendations. Creating an account is quick and easy!</p>
                 
                 <script src="http://localhost/farmassist/resources/js/multi-step-form.js"></script>

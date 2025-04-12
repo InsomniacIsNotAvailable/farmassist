@@ -34,8 +34,8 @@
 .right h2 {
     font-size: 60px;
     color: rgb(255, 0, 0);
-    -webkit-text-stroke: 2px var(--clr-navbar-txt);
-    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px var(--clr-org-bg) !important;
+    -webkit-text-fill-color: red !important;
 }
 
 .right p {
